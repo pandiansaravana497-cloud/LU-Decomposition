@@ -88,9 +88,10 @@ print(X)
 ```
 
 ## Output:
-<img width="870" height="325" alt="image" src="https://github.com/user-attachments/assets/f58e1762-b20f-4b1c-b847-cc926634af88" />
+<img width="1144" height="794" alt="image" src="https://github.com/user-attachments/assets/356f0267-0b21-44b0-9579-e6c4e1d2a072" />
 
-<img width="819" height="363" alt="image" src="https://github.com/user-attachments/assets/3eeca8c0-fbab-4cbc-8415-cb54fc638aa0" />
+<img width="801" height="639" alt="image" src="https://github.com/user-attachments/assets/aa3cb4fe-23c6-44cd-960d-5f5014acebea" />
+
 
 
 
