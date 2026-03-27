@@ -8,31 +8,91 @@ To write a program to find the LU Decomposition of a matrix.
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+## (i) To find the L and U matrix
+
+### Step 1:
+Start.
+### Step 2:
+Input the matrix 𝐴,A from the user.
+### Step 3:
+Store the matrix as a NumPy array.
+### Step 4:
+Call the LU decomposition function from scipy.linalg.lu(A) which decomposes 
+the matrix into three matrices:
+P: Permutation matrix
+L: Lower triangular matrix
+U: Upper triangular matrix
+### Step 5:
+Extract P, L, and U from the function output.
+### Step 6:
+Display the L (lower triangular matrix).
+Display the U (upper triangular matrix).
+### Step 7:
+End.
+## (ii) To find the LU Decomposition of a matrix
+
+### Step 1:
+Start
+### Step 2:
+Input the coefficient matrix A.
+### Step 3:
+Input the constant matrix (right-hand side vector) B.
+### Step 4:
+Perform LU factorization of matrix A using lu_factor(A), which returns:
+A combined matrix containing the factors of L and U.
+A pivoting array P representing row interchanges.
+### Step 5:
+Solve the system of equations AX=B using the LU factors and the pivoting array with lu_solve((L, P), B).
+### Step 6:
+Store the result in variable X.
+### Step 7:
+Print the solution vector X. 
+### Step 8:
+End
+
 
 ## Program:
 (i) To find the L and U matrix
 ```
 /*
 Program to find the L and U matrix.
-Developed by: 
-RegisterNumber: 
+Developed by: PON SARAVANA PANDIAN B
+RegisterNumber: 212225230207
+import numpy as np
+from scipy.linalg import lu
+
+a = np.array(eval(input()))
+p,l,u = lu(a)
+print(l)
+print(u)
 */
 ```
 (ii) To find the LU Decomposition of a matrix
 ```
 /*
 Program to find the LU Decomposition of a matrix.
-Developed by: 
-RegisterNumber: 
+Developed by: PON SARAVANA PANDIAN B
+RegisterNumber: 212225230207
+import numpy as np
+from scipy.linalg import lu_factor,lu_solve
+
+A = np.array(eval(input()))
+B = np.array(eval(input()))
+
+L,P=lu_factor(A)
+X = lu_solve((L,P),B)
+
+print(X)
+
 */
 ```
 
 ## Output:
-![lu decomposition]()
+<img width="870" height="325" alt="image" src="https://github.com/user-attachments/assets/f58e1762-b20f-4b1c-b847-cc926634af88" />
+
+<img width="819" height="363" alt="image" src="https://github.com/user-attachments/assets/3eeca8c0-fbab-4cbc-8415-cb54fc638aa0" />
+
+
 
 
 ## Result:
